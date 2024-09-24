@@ -18,6 +18,25 @@
 // The number of nodes in the list is in the range [1, 105].
 // 0 <= Node.val <= 9
 
+class ListNode {
+    int val;
+    ListNode next;
+
+    // Default constructor
+    ListNode() {
+    }
+
+    // Constructor with value
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    // Constructor with value and next node
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}
 
 class Solution {
     public boolean isPalindrome(ListNode head) {

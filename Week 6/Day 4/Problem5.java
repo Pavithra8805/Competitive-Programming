@@ -29,7 +29,25 @@
 // Output: [4,1,9]
 // Explanation: You are given the second node with value 5, the linked list
 // should become 4 -> 1 -> 9 after calling your function.
+class ListNode {
+    int val;
+    ListNode next;
 
+    // Default constructor
+    ListNode() {
+    }
+
+    // Constructor with value
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    // Constructor with value and next node
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}
 
 class Solution {
     public void deleteNode(ListNode node) {

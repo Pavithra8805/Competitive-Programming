@@ -21,7 +21,25 @@
 // The number of nodes in the list is in the range [0, 104].
 // 1 <= Node.val <= 50
 // 0 <= val <= 50
+class ListNode {
+    int val;
+    ListNode next;
 
+    // Default constructor
+    ListNode() {
+    }
+
+    // Constructor with value
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    // Constructor with value and next node
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}
 
 class Solution {
     public ListNode removeElements(ListNode head, int val) {

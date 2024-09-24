@@ -22,7 +22,25 @@
 // -5000 <= Node.val <= 5000
 
 
+class ListNode {
+    int val;
+    ListNode next;
 
+    // Default constructor
+    ListNode() {
+    }
+
+    // Constructor with value
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    // Constructor with value and next node
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}
 class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
